@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core">
+<h:head><title>Tugas UTS RSBK</title>
+<link href="./css/styles.css" rel="stylesheet" type="text/css"/> 
+</h:head>
+<h:body>
+<div class="bg1" id="home">
+<h:form>
+  	<br></br><br></br>
+    <h2>Pengisian Formulir Survei Siswa</h2>
+    <br></br><br></br>
+        <table>
+      <tr>
+        <td>Nama Depan:</td>
+        <td>
+          <h:inputText label="NamaDepan" 
+                       id="NamaDepan"  
+                       required="true"/>
+                       <h:message for="NamaDepan" style="color: red"/>
+        </td>
+      </tr>
+
+       <tr>
+        <td>Nama Belakang:</td>
+        <td>
+          <h:inputText label="NamaBelakang" 
+                       id="NamaBelakang"  
+                       required="true"/>
+                      <h:message for="NamaBelakang" style="color: red"/>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>Alamat Jalan:</td>
+        <td>
+          <h:inputText label="Address"
+                       id="address" 
+                       required="true"/>
+          <h:message for="address" style="color: red"/>
+        </td>
+      </tr>
+      
+      <tr>
+        <td>Kota:</td>
+        <td>
+          <h:inputText label="Kota" 
+                       id="Kota"  
+                       required="true"/>
+                       <h:message for="Kota" style="color: red"/>
+        </td>
+      </tr>
+      
+         
+         <tr>
+        <td>Negara:</td>
+        <td>
+          <h:inputText label="Negara" 
+                       id="Negara"  
+                       required="true"/>
+                       <h:message for="Negara" style="color: red"/>
+        </td>
+      </tr>
+      
+               <tr>
+        <td>Kode Pos:</td>
+        <td>
+          <h:inputText label="Pos" 
+                       id="Pos" type="number"  
+                       required="true"/>
+                       <h:message for="Pos" style="color: red"/>
+        </td>
+      </tr>
+      
+            <tr>
+        <td>No Telepon:</td>
+        <td>
+          <h:inputText label="Mobile Number"
+                       id="mobileno"  required="true">
+          </h:inputText>
+          <h:message for="mobileno" style="color: red"/>
+        </td>
+      </tr>
+      
+            <tr>
+        <td>Alamat Email:</td>
+        <td>
+          <h:inputText label="Email Address"
+                       id="email"  required="true"/>
+          <h:message for="email" style="color: red"/>
+        </td>
+      </tr>
+      
+        <tr>
+        <td>Tanggal Survey:</td>
+        <td>
+          <h:inputText label="Date of Birth"
+                       id="tglsurvey"  required="true">
+            <f:convertDateTime pattern="MM-dd-yy" />
+          </h:inputText> (mm-dd-yy)
+          <h:message for="tglsurvey" style="color: red"/>
+        </td>
+      </tr>
+      <tr>
+       <td>Apa Yang Kalian Sukai Tentang Kampus?:</td>
+      <td>
+ <h:selectManyCheckbox >
+         	<f:selectItem itemValue="siswa" itemLabel="siswa" />
+   			<f:selectItem itemValue="lokasi" itemLabel="lokasi" />
+   			<f:selectItem itemValue="kampus" itemLabel="kampus" />
+   			<f:selectItem itemValue="suasana" itemLabel="suasana" />
+   			<f:selectItem itemValue="kamar asrama" itemLabel="kamar asrama" />
+   			<f:selectItem itemValue="olahraga" itemLabel="olahraga" />
+       </h:selectManyCheckbox>
+      </td>
+      </tr>
+      
+
+      
+      <tr>
+        <td>Bagaimana Tertarik Dengan Undip:</td>
+        <td>
+          <h:selectOneRadio label="fasilitas" 
+                            id="fasilitas"  >
+            <f:selectItem itemLabel="Teman" itemValue="Teman" />
+            <f:selectItem itemLabel="Televisi" itemValue="Televisi" />
+            <f:selectItem itemLabel="Internet" itemValue="Internet" />
+               <f:selectItem itemLabel="Lainnya" itemValue="Lainnya" />
+          </h:selectOneRadio>
+        <h:message for="fasilitas" style="color: red"/>             
+        </td>
+      </tr>
+      
+
+<tr>
+        <td>Apakah Kamu Ingin merekomendasikan??</td>
+        <td>
+          <h:selectOneMenu label="rekomendasi"
+                           >
+                           <f:selectItem itemLabel=" " itemValue=" " />
+            <f:selectItem itemLabel="Sangat Mungkin" itemValue="Sangat Mungkin" />
+            <f:selectItem itemLabel="Mungkin" itemValue="Mungkin" />
+            <f:selectItem itemLabel="Tidak Mungkin" itemValue="Tidak Mungkin" />
+          </h:selectOneMenu>
+        </td>
+      </tr>
+      
+      
+      <tr>
+        <td>Komentar Tambahan</td>
+   		 <td><h:inputTextarea  cols="30" rows="10" /></td>
+      </tr>
+    </table>
+
+    <h:commandButton value="Kirim" action="index 2.html"/>
+  </h:form>
+</div>
+</h:body></html>
