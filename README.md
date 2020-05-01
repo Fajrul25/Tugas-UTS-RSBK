@@ -15,6 +15,6 @@ URL S3 / HomePage
 https://rplbk.s3-ap-southeast-1.amazonaws.com/11802626175248.jpg
 
 URL EC2 instance
-http://ec2-3-22-236-77.us-east-2.compute.amazonaws.com:8080/el/
+ec2-3-23-64-197.us-east-2.compute.amazonaws.com:8080/el/
 
 Screenshoot ada di file .doc
